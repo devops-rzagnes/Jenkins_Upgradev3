@@ -9,17 +9,17 @@ pipeline {
             }
             stage('Build') {
                   steps {
-                        echo 'Building Sample Maven Project'
+                        echo 'Building Sample Maven Project...@ $(date)'
                   }
             }
             stage('Deploy') {
                   steps {
-                        echo "Deploying in Staging Area"
+                        echo "Deploying in Staging Area...@ $(date)"
                   }
             }
             stage('Deploy Production') {
                   steps {
-                        echo "Deploying in Production Area"
+                        echo "Deploying in Production Area...@ $(date)"
                   }
             }
       }
